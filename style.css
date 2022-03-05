@@ -1,0 +1,109 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    background: linear-gradient(to right top, #7844e9, #000);  
+    /* background-color: #7844e9; */
+    min-height: 100vh;
+}
+
+header{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+header, form{
+    /* border:1px solid red; */
+    display: flex;
+    min-height: 20vh;
+    justify-content : center;
+    align-items : center;
+}
+
+
+form input, form button {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+}
+
+form button{
+    background-color : #7844e9;
+    color : white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover{
+    background-color : #9468f1;
+}
+
+/* JS ELEMENTS  */
+
+.todo-container{
+    display: flex;
+    justify-content :  center;
+    align-items: center;
+}
+
+.todo-list{
+   list-style-type: none;
+   min-width: 30%;
+}
+
+
+.todoDiv{
+    display: flex;
+    justify-content :  space-between;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #fff;
+
+}
+
+.todoDiv li{
+    flex: 1;
+    text-align: center;
+}
+
+.checkButton, .deleteButton{
+    background-color : rgb(251, 128, 128);
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkButton{
+    background-color : rgb(138, 223, 113);
+}
+
+.checkButton:hover{
+    background-color : rgb(121, 219, 91);
+}
+
+.deleteButton:hover{
+    background-color : rgb(248, 116, 116);
+}
+
+.fa-check-square, .fa-trash{
+    pointer-events: none;
+}
+
+.deleteFn{
+    display: none;
+}
+
+.checkFn{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
